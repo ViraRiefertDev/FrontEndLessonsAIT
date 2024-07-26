@@ -1,0 +1,20 @@
+.container {
+   display: flex;
+   margin: 20px 10px;
+   padding: 30px 20px;
+   flex-wrap: wrap;
+}
+.block {
+   width: 150px;
+   height: 150px;
+   border: 3px solid black;
+   margin: 10px;
+
+}
+/* Выбираем диапазон от 3 до 8 */
+/* .block:nth-child(n+3):nth-child(-n+8){
+   border-radius: 50%;
+} */
+
+.block:nth-child(3n-1):nth-child(3n+2){
+   border-radius: 50%;}
