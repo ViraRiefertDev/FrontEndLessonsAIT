@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Теги форм</title>
+</head>
+
+<body>
+   <form action="#" method="get">
+      <div>
+         <!--некое описание, которым мы связываем лейбл с нашим -->
+         <label for="email_">Email
+            <input type="email" id="email_" placeholder="Введите ваш email">
+         </label>
+      </div>
+      <div>
+
+         <label for="password_">Password
+            <input type="password" id="password_" placeholder="Введите ваш пароль">
+         </label>
+      </div>
+      <div>Ваш возраст
+         <div>
+            <input type="radio" name="age" id="age1" value="0-18">
+            <label for="age1">0-18</label>
+         </div>
+         <div>
+            <input type="radio" name="age" id="age2" value="19-50">
+            <label for="age2">19-50</label>
+         </div>
+         <div>
+            <input type="radio" name="age" id="age3" value="50+">
+            <label for="age3">50+</label>
+         </div>
+      </div>
+      <div>
+         <input type="color" name="color" id="favorite-color">
+         <label for="favorite-color">Любимый цвет</label>
+      </div>
+      <div>
+         <input type="date" name="birth-date" id="birth-date">
+         <label for="birth-date">Дата рождения</label>
+      </div>
+     
+      <div>
+         <textarea name="textarea" id="" cols="30" rows="10" maxlength="20"></textarea>
+      </div>
+      <br>
+      <div>
+         <input type="range" name="friendsCount" id="friendsCount" min="0" max="50" oninput="this.nextElementSibling.value=this.value">
+         <output></output>
+         <label for="friendsCount">Количество друзей (от 0 до 500)</label>
+      </div>
+      <div>
+         <label for="">Способ связи с вами</label>
+         <select name="contact" id="contact-form">
+            <option value="phone">Телефон</option>
+            <option value="email">Email</option>
+            <option value="Telegram">Telegram</option>
+         </select>
+      </div>
+      <div>
+         <div>
+            <input type="checkbox" name="agree_spam" id="agree1" value="YES">
+            <label for="agree1">Согласны на спам</label>
+         </div>
+         <div>
+            <input checked type="checkbox" name="agree_terms" id="agree2" value="YES">
+            <label for="agree2">Согласны на условия обработки данных</label>
+         </div>
+         <div>
+            <input checked type="checkbox" name="agree_rent" id="agree3" value="YES">
+            <label for="agree3">Согласны на аренду вашей квартиры</label>
+         </div>
+      </div>
+      <div>
+         <p>
+            <input type="file" name="userPhoto" id="" tabindex="5">
+         </p>
+      </div>
+      
+      <button type="submit"></button>
+   </form>
+</body>
+
+</html>
