@@ -1,0 +1,100 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+@font-face {
+   font-family: Roboto;
+   src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+body{
+   background-color: #f8efba;
+}
+
+main{
+   width: 70%;
+   padding: 50px;
+   margin: auto;
+   background-color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+h1{
+   width: 100%;
+   text-align: center;
+   font-size: 48px;
+
+}
+
+.block_div{
+width: calc(50% - 40px);
+height: calc((35vw - 40px) / 16 * 9);
+margin: 20px;
+/* width: calc(50% - 40px);
+50%: Это 50% ширины родительского элемента.
+- 40px: Это вычитание 40 пикселей из значения 50%. */
+
+/* height: calc((35vw - 40px) / 16 * 9);
+35vw: Это 35% от ширины окна просмотра (viewport width).
+- 40px: Это вычитание 40 пикселей из значения 35vw.
+16: Это деление на 16. Предположительно, это может быть для получения соотношения сторон 16:9.
+* 9: Это умножение на 9 для завершения вычисления соотношения сторон 16:9.
+Таким образом, итоговая высота элемента рассчитывается как 35% ширины окна просмотра минус 40 пикселей,
+деленное на 16 и умноженное на 9. */
+background-color: orange;
+background-position: center;
+background-size: cover;
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+transition: all 0.9s ease;
+
+}
+
+.block_div:hover{
+   transform: scale(1.7);
+
+}
+.photo1 {
+   background: url(../image/img1.jpeg);
+}
+.photo2 {
+   background: url(../image/img2.jpeg);
+}
+.photo3 {
+   background: url(../image/img3.jpeg);
+}
+.photo4 {
+   background: url(../image/img4.jpeg);
+}
+.photo5 {
+   background: url(../image/img5.jpeg);
+}
+.photo6 {
+   background: url(../image/img6.jpeg);
+}
+.photo7 {
+   background: url(../image/img7.jpeg);
+}
+.photo8 {
+   background: url(../image/img8.jpeg);
+}
+.photo9 {
+   background: url(../image/img9.jpeg);
+}
+.photo10 {
+   background: url(../image/img10.jpeg);
+}
+.photo11 {
+   background: url(../image/img11.jpeg);
+}
+.photo12 {
+   background: url(../image/img12.jpeg);
+}
