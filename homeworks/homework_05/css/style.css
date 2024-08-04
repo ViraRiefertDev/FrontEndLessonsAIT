@@ -101,16 +101,21 @@ h6 {
 .container {
    width: 1050px;
    height: 200vh;
-   margin:0 auto;
+   margin: 0 auto;
    padding: 30px;
+   position: relative;
 }
 
 
-.banner {
+.navigation{
+   position: sticky;
+   top: 15px;
 }
 .navbar {
   background: rgb(102,102,102);
   margin: 0 -10px;
+  
+  
   
 }
 .navbar_items{
