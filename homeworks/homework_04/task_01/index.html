@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 01</title>
+</head>
+
+<body>
+   <h1>Письмо Санте</h1>
+   <p>Дорогой друг, не стесняйся и расскажи Санте о том, кто ты и о том, что ты хочешь получить на Рождество.</p>
+   <form action="#" method="get">
+      <div>
+         <input tabindex="1" type="text" name="userlogin" placeholder="Логин">
+      </div>
+      <br>
+      <div>
+         <input tabindex="2" type="password" name="password" placeholder="Пароль">
+      </div>
+      <br>
+      <div>
+         <input tabindex="3" type="text" name="username" placeholder="Имя">
+      </div>
+      <div>
+         <p>Пол</p>
+         <label for="male_">
+            <input tabindex="4" type="radio" name="gender" id="male_" value="male"> Мальчик
+         </label>
+         <label for="female_">
+            <input tabindex="4" type="radio" name="gender" id="female_" value="female"> Девочка
+         </label>
+      </div>
+
+      <br>
+      <div>
+         <label for="birth-date">Дата рождения:
+            <input  tabindex="5" type="date">
+         </label>
+      </div>
+      <br>
+      <div>
+         <select tabindex="6" name="town">
+            <option value="Cologne">Кёльн</option>
+            <option selected value="München">Мюнхен</option>
+            <option value="Berlin">Берлин</option>
+            <option value="Düsseldorf">Дюссельдорф</option>
+         </select>
+      </div>
+      <div>
+         <p>Выбери цвет своей новой игрушки</p>
+         <div>
+            <label for="hat_">
+               <input tabindex="7" type="color" name="hatcolor" value="#FF7F50" id="hat_"> Шапочка
+            </label>
+         </div>
+         <div>
+            <label for="suit_">
+               <input tabindex="8" type="color" name="suitcolor" value="#FFD700" id="suit_"> Костюм
+            </label>
+         </div>
+      </div>
+      <p>Ты был хорошим ребенком?</p>
+      <div>
+         <label for="yes_">
+            <input tabindex="9" type="radio" name="goodchild" id="yes_" value="yes"> Да
+         </label>
+         <label for="no_">
+            <input tabindex="9" type="radio" name="goodchild" id="no_" value="no"> Нет
+         </label>
+      </div>
+      <br>
+      <button tabindex="10" type="submit">Отправить письмо Санте</button>
+   </form>
+
+
+</body>
+
+</html>
