@@ -1,0 +1,33 @@
+.wrapper{
+   margin:30px;
+   padding: 30px;
+   background-color: lightblue;
+   border:3px solid blue;
+   display: flex;
+   flex-direction: column;
+   height: 700px;
+}
+.item{
+ 
+}
+.header{
+   font-size: 28px;
+   text-align: center;
+   background-color: lightcoral;
+   border: 3px solid red;
+   
+  
+}
+.main{
+   font-size: 28px;
+   text-align: center;
+   background-color: lightgreen;
+   border: 3px solid green;
+   flex-grow: 1;
+}
+.footer{
+   font-size: 28px;
+   text-align: center;
+   background-color: lightgray;
+   border: 3px solid #000;
+}
