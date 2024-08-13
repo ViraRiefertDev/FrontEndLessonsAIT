@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*--------------------*/
+
+body{
+   font-family: "Oswald";
+}
+
+.wrapper {
+   height: 2024px;
+}
+
+.container {
+   max-width: 1090px;
+   margin: 0 auto;
+   padding: 0 30px;
+   position: relative;
+}
+
+/*---------HEADER-------*/
+header {
+   background-color: #fff;
+   position: sticky;
+   top: 0px;
+   padding: 24px 0 0 0;
+   
+  
+}
+.header-flexcontainer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.header__column {
+}
+.header__column--logo{
+   padding: 25px;
+}
+.header-menu {
+}
+.header-menu-list {
+   margin: 0;
+   display: flex;
+   justify-content: space-between;
+   gap: 12.8px;
+   font-size: 16px;
+   font-weight: 600;
+}
+.header-menu__link {
+   color: #000;
+}
+.header-logo {
+   position: relative;
+   top: 15px;
+   z-index: 10;
+
+}
+.header-logo__image {
+   position: relative;
+   display: inline-block;
+   width: 160px;
+
+   margin: 0 30px ;
+}
+.header-logo__image img{
+   position: absolute;
+   top: -66px;
+   width: 100%;
+}
+
+/*-------MAIN------*/
+main{
+   position: relative;
+   z-index: -3;
+}
+.main-top {
+   
+}
+.main-top__block{
+   position: relative;
+   top:-60px;
+   background-color: #000;
+   height: 640px;
+}
+.main-top__image {
+   background: url("../image/bild.png") center/cover no-repeat;
+   height: 590px;
+}
+
+.main-top__watch {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #444;
+   min-height: 50px;
+   
+}
+
+.main-top__watch a{
+   color: #fff;
+   font-weight: 700;
+   font-size: 1.2em;
+}

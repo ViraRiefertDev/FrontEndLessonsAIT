@@ -1,0 +1,58 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.body{
+   background-color: #fff;
+}
+.cars {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   position: relative;
+}
+.cars div{
+   width: 360px;
+   height: 360px;
+   outline: 1px solid #000;
+   background-color: #f8f8f8;
+   margin: 20px;
+   background-image: url("../image/WRX.png");
+   background-repeat: no-repeat;
+   background-size: 90%;
+   background-position: center;
+   transition: background .5s;
+}
+.cars div:hover{
+   background-size:150%;
+   background-position: right 130% top 50%;
+  
+}
+
+.cars div .descr{
+   position: relative;
+   opacity: 0;
+   color: blue;
+   display: inline-block;
+   text-decoration: none;
+   padding: 10px;
+   border: 2px solid blue;
+   border-radius: 4px;
+   top: 270px;
+   left:20px;
+   transition: background .5s;
+   transition: 0.5s;
+
+}
+
+.cars div:hover .descr{
+  opacity: 1;
+
+}
+.cars div .descr:hover{
+   background-color: blue;
+   color: white;
+   transition: 0.5s;
+}
