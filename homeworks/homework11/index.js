@@ -5,9 +5,9 @@
 
 
 console.log("--------Задача 1----------");
-function printDoubleElements(array){
+function printDoubleElements(inputArray){
    const result=[];
-   for(number of array){
+   for(number of inputArray){
       result.push(number * 2);
    }
    console.log(result);
@@ -43,12 +43,12 @@ console.log(string3);
 
 console.log("--------Задача 3----------");
 
-function printAverage(array){
+function printAverage(inputArray){
    let summ = 0;
-   for(number of array){
+   for(number of inputArray){
       summ += number;
    }
-   const avarage = summ/array.length;
+   const avarage = summ/inputArray.length;
    console.log(avarage);
 }
 
