@@ -23,13 +23,13 @@ printDoubleElements(numbersArray);
 выведите переменные в консоль */
 
 console.log("--------Задача 2----------");
-function getFirstNChars(string,n){
-   return string.substring(0,n);
+function getFirstNChars(inputStr,n){
+   return inputStr.substring(3,n);
 }
-const string = "abracadabra";
-const string1 = getFirstNChars(string, 2);
-const string2 = getFirstNChars(string, 5);
-const string3 = getFirstNChars(string, 8);
+const exampleStr = "abracadabra";
+const string1 = getFirstNChars(exampleStr, 2);
+const string2 = getFirstNChars(exampleStr, 20);
+const string3 = getFirstNChars(exampleStr);
 
 console.log(string1);
 console.log(string2);
