@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calc ideal weight</title>
+   <link rel="stylesheet" href="./styles.css" type="text/css">
+   <script src="./index.js" defer></script>
+</head>
+<body>
+   <div class="main-container">
+      <div class="app-container">
+         <form class="form" action="#" id="main-form">
+            <div>
+               <label for="userHeight_" class="label"><p class="required-to-fill">Рост, см</p></label>
+               <p><input type="number" class="input" name = "userHeight" id="userHeight_" placeholder="Введите свой рост" required></p>
+            </div>
+            <div>
+               <label for="userGender_" class="label"><p class="required-to-fill">Выберите пол</p>
+                  <p>
+                     <select class="input" name="userGender" id="userGender_" required>
+                        <option value="Male">Мужской</option>
+                        <option value="Female">Женский</option>
+                     </select>
+                  </p>
+               </label>
+            </div>
+            <button type="submit" class="send-button">Рассчитать</button>
+         </form>
+         <div class="result"></div>
+      </div>
+   </div>
+</body>
+</html>
