@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="./styles.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="./index.js" defer></script>
+   </head>
+   <body>
+      <h1 class="title">Create Employee</h1>
+      <div class="main-container">
+         <div class="flex-card-container">
+               <form id="id-form" class="flex-form-card" action="">
+                  <div class="input-flex-container">
+                     <label for="user-name_">Name*</label>
+                     <input id="user-name_" name="userName", class="user-input" 
+                  type="text" placeholder="Enter employee Name">
+                  </div>
+                  <div class="input-flex-container">
+                     <label for="user-surname_">Surname*</label>
+                     <input id="user-surname_" name="userSurname", class="user-input" 
+                  type="text" placeholder="Enter employee Surname">
+                  </div>
+                  <div class="input-flex-container">
+                     <label for="age_">Age*</label>
+                     <input min="0" max="100" id="age_" name="age", class="user-input" 
+                  type="number" placeholder="Enter employee Age">
+                  </div>
+                  <div class="input-flex-container">
+                     <label for="job-position_">Job posi*</label>
+                     <input id="job-position_" name="jobPosition", class="user-input" 
+                  type="text" placeholder="Enter employee Position">
+                  </div>
+                  <button class="button-result" type="submit">Create</button>
+               </form>
+         </div>
+         <div class="flex-card-container  flex-card-container-mod hide-card-container">
+               <div class="flex-subcontainer">
+                  <p class="title-result">Name</p>
+                  <p id="result-user-name" class="result-select">слово</p>
+               </div>
+               <div class="flex-subcontainer">
+                  <p class="title-result">Surname</p>
+                  <p id="result-user-surname"class="result-select">еще одно</p>
+               </div>
+               <div class="flex-subcontainer">
+                  <p class="title-result">Age</p>
+                  <p id="result-user-age" class="result-select">авокадо</p>
+               </div>
+               <div class="flex-subcontainer">
+                  <p class="title-result"> Job Position</p>
+                  <p id="result-user-job" class="result-select">спасибо</p>
+               </div>
+         </div>
+      </div>
+   </body>
+   </html>

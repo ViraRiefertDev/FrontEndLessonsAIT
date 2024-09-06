@@ -1,0 +1,108 @@
+   @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+   * {
+      box-sizing: border-box;
+   }
+   html,
+   body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #123;
+   }
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   ul,
+   li {
+      margin: 0;
+      padding: 0;
+   }
+
+.main-container {
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+   margin-top: 50px;
+   justify-content: center;
+   gap: 94px;
+}
+.title {
+   color: #fff;
+   text-align: center;
+   margin: 48px 0px 44px;
+}
+.flex-card-container {
+   background-color: #fff;
+   height: 592px;
+   width: 590px;
+   border-radius: 4px;
+   padding: 60px;
+}
+.flex-form-card {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.input-flex-container {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   color: #6f6f6f;
+}
+.user-input{
+   font-size: 16px;
+   line-height: 48px;
+}
+.flex-card-container-mod {
+   
+   height: 470px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.hide-card-container{
+   opacity: 0;
+}
+.show-card-container{
+   opacity: 1;
+}
+.flex-subcontainer {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+.title-result{
+   font-size: 16px;
+   line-height: 21px;
+   color: #6f6f6f;
+
+}
+.result-select{
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 36px;
+
+}
+
+button {
+   background-color: #1f27f5;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   line-height: 70px;
+   font-weight: 400;
+   font-size: 20px;
+   transition: all 0.3s ease;
+}
+button:hover {
+   background-color: #0056b3;
+}
+button:active{
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transform: translateY(4px);
+}
