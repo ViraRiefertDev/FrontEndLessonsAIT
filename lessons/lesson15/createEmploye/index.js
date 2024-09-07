@@ -12,13 +12,13 @@ let resultJob = document.querySelector('#result-user-job');
 let showResultCard = (event)=>{
    event.preventDefault();
    //Считываем все введенные данные с помощью формы и атрибута name
-   let userNameValue = form.userName.value;
-   let userSurnameValue = form.userSurname.value;
+   let userNameValue = form.userName.value.trim();
+   let userSurnameValue = form.userSurname.value.trim();
    let userAgeValue = Number(form.age.value);
-   let employeePositionValue = form.jobPosition.value;
+   let employeePositionValue = form.jobPosition.value.trim();
    
 
-   if(userNameValue !== "" && userSurnameValue !== "" && userAgeValue !== 0 && employeePositionValue !== ""){
+   if(userNameValue !== "" && userSurnameValue !== "" && userAgeValue >= 18 && userAgeValue <= 60 && employeePositionValue !== ""){
    //Позитивный кейс, все данные введены
    resultName.textContent = userNameValue;
    resultSurname.textContent = userSurnameValue;
@@ -28,7 +28,7 @@ let showResultCard = (event)=>{
    }else{
       resultContainer.classList.add('hide-card-container');
       // Используем setTimeout для задержки перед показом alert
-      setTimeout(() => {
+      
          let message = "Введите следующие данные:\n";
          if (userNameValue === "") {
             message += 'Имя\n';
@@ -36,14 +36,13 @@ let showResultCard = (event)=>{
          if (userSurnameValue === "") {
             message += 'Фамилия\n';
          }
-         if (userAgeValue === 0) {
-            message += 'Возраст\n';
+         if (userAgeValue < 18 || userAgeValue>60) {
+            message += 'Возраст (18-60)\n';
          }
          if (employeePositionValue === "") {
             message += 'Должность сотрудника';
          }
-         alert(message);
-     }, 100); // Задержка в 100 миллисекунд позволяет браузеру обновить DOM
+         setTimeout(() => {alert(message);}, 100); // Задержка в 100 миллисекунд позволяет браузеру обновить DOM
    }
 }
 
