@@ -1,4 +1,4 @@
-//выбор элиментов
+//выбор элементов
 let buttonResult = document.querySelector(".button-result");
 let resultContainer = document.querySelector(".flex-card-container-mod");
 let form = document.querySelector("#id-form");
@@ -27,7 +27,7 @@ let showResultCard = (event)=>{
    resultContainer.classList.remove('hide-card-container');
    }else{
       resultContainer.classList.add('hide-card-container');
-      // Используем setTimeout для задержки перед показом alert
+      
       
          let message = "Введите следующие данные:\n";
          if (userNameValue === "") {
@@ -42,6 +42,7 @@ let showResultCard = (event)=>{
          if (employeePositionValue === "") {
             message += 'Должность сотрудника';
          }
+         // Используем setTimeout для задержки перед показом alert
          setTimeout(() => {alert(message);}, 100); // Задержка в 100 миллисекунд позволяет браузеру обновить DOM
    }
 }
