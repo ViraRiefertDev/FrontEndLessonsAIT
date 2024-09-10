@@ -28,22 +28,21 @@ let showResultCard = (event)=>{
    }else{
       resultContainer.classList.add('hide-card-container');
       
-      
-         let message = "Введите следующие данные:\n";
-         if (userNameValue === "") {
-            message += 'Имя\n';
-         }
-         if (userSurnameValue === "") {
-            message += 'Фамилия\n';
-         }
-         if (userAgeValue < 18 || userAgeValue>60) {
-            message += 'Возраст (18-60)\n';
-         }
-         if (employeePositionValue === "") {
-            message += 'Должность сотрудника';
-         }
-         // Используем setTimeout для задержки перед показом alert
-         setTimeout(() => {alert(message);}, 100); // Задержка в 100 миллисекунд позволяет браузеру обновить DOM
+      let message = "Введите следующие данные:\n";
+      if (userNameValue === "") {
+         message += 'Имя\n';
+      }
+      if (userSurnameValue === "") {
+         message += 'Фамилия\n';
+      }
+      if (userAgeValue < 18 || userAgeValue>60) {
+         message += 'Возраст (18-60)\n';
+      }
+      if (employeePositionValue === "") {
+         message += 'Должность сотрудника';
+      }
+      // Используем setTimeout для задержки перед показом alert
+      setTimeout(() => {alert(message);}, 100); // Задержка в 100 миллисекунд позволяет браузеру обновить DOM
    }
 }
 
