@@ -4,7 +4,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CreateX</title>
-   <link rel="stylesheet" href="css/style_contact_us.css">
+   <link rel="stylesheet" href="../../styles/globalStyles.css">
+   <link rel="stylesheet" href="../../pages/contactUs/style_contact_us.css">
 </head>
 <body>
    <div class="wrapper">
@@ -12,7 +13,7 @@
          <header class="header">
             <div class="logo-nav">
                <div class="logo">
-                  <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                  <a href="../../index.html"><img src="../../assets/logo.svg" alt="logo"></a>
                </div>
                <nav class="navbar">
                   <a href="#" class="navbar__item">About Us</a>
@@ -28,8 +29,7 @@
                         <div class="contacts__text">Call us</div>
                         <div class="contacts__coordinates">(405) 555-0128</div>
                      </a>
-                  </div>
-               
+                  </div>               
                <div class="contacts__item item-email">
                   <a href="#">
                      <div class="contacts__text">Talk to us</div>
@@ -45,7 +45,7 @@
                <p class="text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
                <div class="block-form">
                   <div class="bolock-form__img">
-                     <img src="images/form_image.jpg" alt="doctor">
+                     <img src="../../assets/form_image.jpg" alt="doctor">
                   </div>
                   <form action="#" method="get"> 
                      <div class="form-flex-container">
@@ -69,6 +69,7 @@
                               <label for="interested-in_"><p class="lable-text">I am interested in</p>
                                  <p>
                                     <select tabindex="4" name="interested-in" id="interested-in_">
+                                       <option value="" disabled selected>Select...</option>
                                        <option value="Interior_Design">Interior Design</option>
                                        <option value="Architectural_Design">Architectural Design</option>
                                        <option value="Renovation_Remodeling">Renovation & Remodeling</option>
@@ -82,6 +83,7 @@
                               <label for="location_"><p class="lable-text required-to-fill">Location</p>
                                  <p>
                                     <select tabindex="5" name="location" id="location_" required>
+                                       <option value="" disabled selected>Select city...</option>
                                        <option value="NY">New York</option>
                                        <option value="LA">Los Angeles</option>
                                        <option value="Chicago">Chicago</option>
