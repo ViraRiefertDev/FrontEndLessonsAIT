@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide:regular);
+
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+   margin: 0;
+   padding: 0;
+}
+.root {
+   background: url("./img/starSky.jpg");
+   font-family: Audiowide;
+   color: antiquewhite;
+   min-height: 100vh;
+}
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+}
+.mainContant {
+   padding: 80px 0 0 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+h1 {
+}
+.img-container {
+   width: 1000px;
+}
+.img-container img {
+   width: 100%;
+}
+.info-container {
+   display: flex;
+   flex-direction: column;
+   font-size: 22px;
+}
+.info-header {
+}
+.info-line {
+   display: flex;
+   gap: 100px;
+   justify-content: space-between;
+}
+
+.button-starwars {
+   display: inline-block;
+   padding: 10px 20px;
+   border: 2px solid #ffffff;
+   border-radius: 5px;
+   background: linear-gradient(145deg, #000000, #333333);
+   color: #ffffff;
+   font-family: Audiowide;
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   position: relative;
+   overflow: hidden;
+   transition: all 0.3s ease;
+}
+
+.button-starwars:hover {
+   background: linear-gradient(145deg, #333333, #000000);
+   border-color: rgba(192, 192, 192, 0.8);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.button-starwars::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 300%;
+   height: 300%;
+   background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0) 70%
+   );
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.button-starwars:hover::before {
+   opacity: 1;
+}
+
+.button-starwars .icon {
+   display: inline-block;
+   margin-right: 8px;
+
+   font-size: 20px;
+}
+
+.button-starwars:active {
+   background: rgba(255, 255, 255, 0.1); 
+   transform: scale(0.95); 
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+   transition: all 0.1s ease;
+}
+
+.button-starwars:active::before {
+   background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0) 80%
+   );
+   opacity: 1;
+}
+
+.hide-line{
+   display: none;
+}
