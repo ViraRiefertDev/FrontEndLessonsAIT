@@ -5,8 +5,10 @@
    max-width: 1920px;
    background: url(./assets/bg-image.jpg) no-repeat center/cover;
    padding: 200px 0 0 0;
+   overflow: auto;
 
 }
+
 
 
 .section {
@@ -28,7 +30,6 @@
 .content__text {
    font-size: 20px;
    line-height: 30px;
-   
 }
 .buttons {
    display: flex;
@@ -39,7 +40,7 @@
    color: white;
    text-transform: uppercase;
    font-size: 16px;
-  font-weight: 700;
+   font-weight: 700;
    line-height: 52px;
    border-radius: 4px;
    padding: 0 40px 0 ;
@@ -62,4 +63,32 @@
 .buttons__contact-us:hover{
    box-shadow: 0 0 30px #FF5A30;
    transition: 0.4s;
+}
+
+@media (max-width: 768px){
+   .content{
+      padding: 100px 0 0 0;
+   }
+
+   .content__title {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 65px;
+   }
+
+   .content__text {
+      font-size: 18px;
+      line-height: 28px;
+   }
+
+   .buttons {
+      gap: 14px;
+   
+   }
+   .buttons a{
+      font-size: 14px;
+      line-height: 42px;
+      padding: 0 20px 0 ;
+   }
+   
 }
