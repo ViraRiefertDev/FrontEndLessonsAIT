@@ -290,7 +290,7 @@ body {
    .header__list {
       flex-direction: column;
       gap: 40px;
-      padding: 10px 0 0 0;
+      padding: 60px 0 0 0;
    }
 
    .header__link {
@@ -309,6 +309,9 @@ body {
 @media (max-width: 768px) {
    .header__body {
       height: 50px;
+   }
+   .header__list {
+      padding: 10px 0 0 0;
    }
 }
 .contacts {
