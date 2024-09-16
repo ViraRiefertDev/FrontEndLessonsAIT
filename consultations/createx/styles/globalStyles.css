@@ -88,26 +88,52 @@ h6 {
    font-size: inherit;
    font-weight: 400;
 }
-
 /*--------------------*/
-body{
-   font-family: "Ubuntu";
-}
-.wrapper {
-   
 
+/*------ Header ----------*/
+
+body {
+   height: 100%;
+   font-family: "Ubuntu", "Helvetica Neue", Helvetica, sans-serif;
 }
+
+.header {
+   /* position:fixed;
+   width: 100%;
+   top: 0;
+   left: 0; */
+   /* Чтоб бургер накрыл весь наш контент, надо чтобы шапка была поверх остального контента */
+   position: relative;
+   z-index: 50;
+   background-color: #fff;
+}
+/* Создаем плашку на весь размер шапки */
+/* Чтоб меню открывалось под плашкой */
+.header::before {
+   display: none;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   z-index: 1;
+}
+
 .container {
    margin: 0 auto;
-   padding:0 20px;
+   padding: 0 10px;
    max-width: 1230px;
 }
-.header {
+.header__body {
    height: 92px;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   
+   /* Вытаскиваем наверх контентную часть шапки */
+   position: relative;
+   gap: 10px;
 }
 .logo-nav {
    min-width: 640px;
@@ -116,40 +142,186 @@ body{
    align-items: center;
    justify-content: space-between;
 }
-
-
-.logo {
+.header-logo {
+   position: relative;
+   flex: 0 0 130px;
+   z-index: 3;
 }
-.navbar {
+
+.header-logo img {
+   max-width: 100%;
+}
+
+.header__menu {
+   margin: 0 90px 0 0;
+   position: relative;
+   z-index: 2;
+}
+
+@media (max-width: 1144px) {
+   .header__menu {
+      margin: 0;
+   }
+}
+
+.header__list {
    display: flex;
    gap: 10px;
-
+   color: #1e212c;
 }
-.navbar__item {
+.header__list li {
+   list-style: none;
+}
+.header__link {
    width: 85px;
    height: 35px;
    font-size: 16px;
    line-height: 35px;
    font-weight: 700;
    text-align: center;
-   color: #424551;
+
    transition: 0.4s;
 }
+.header__link a {
+   color: #424551;
+}
 
-.navbar__item:hover{
-   box-shadow: 0 0 10px #FF5A30;
+.header__link:hover {
+   box-shadow: 0 0 10px #ff5a30;
    transition: 0.4s;
    border-radius: 20px;
+}
+
+.contacts {
+   position: relative;
+   z-index: 3;
+}
+
+/* === MENU-BURGER ========= */
+.header::before {
+   z-index: 3;
+}
+
+/* Скрываем блок бургера для всех разрешений, которые выше нужного */
+.header__burger {
+   display: none;
+}
+/* 768px */
+@media (max-width: 1130px) {
+   body {
+      overflow: hidden;
+   }
+   .header::before {
+      display: block;
+   }
+
+   .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+   }
+
+   /* Рисуем значек бургера */
+   .header__burger::before,
+   .header__burger::after {
+      content: "";
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+   .header__burger::before {
+      /* Верхняя полоса бургера */
+      top: 0;
+   }
+   .header__burger::after {
+      /* Нижняя полоса бургера */
+      bottom: 0;
+   }
+
+   .header__burger span {
+      /* Средняя полоса бургера */
+      position: absolute;
+      background-color: black;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+   }
+
+   .header__burger.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+   }
+   .header__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+
+   .header__burger.active span {
+      transform: scale(0);
+   }
+
+   .header__menu {
+      position: fixed;
+      /* Изначально меню отправляем на верх */
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Чтобы если по высоте меню не помещается на экран его можно было скроллить */
+      overflow: auto;
+      background-color: rgba(101, 108, 116, 255);
+      padding: 70px 0 0 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   .header__menu.active {
+      top: 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   .header__list {
+      flex-direction: column;
+      gap: 40px;
+      padding: 60px 0 0 0;
+   }
+
+   .header__link {
+      width: 300px;
+      text-align: start;
+      padding: 0 0 0 10px;
+   }
+
+   .header__link a {
+      font-size: 40px;
+   }
+}
+
+/* ============================================================ */
+
+@media (max-width: 768px) {
+   .header__body {
+      height: 50px;
+   }
+   .header__list {
+      padding: 10px 0 0 0;
+   }
 }
 .contacts {
    display: flex;
    gap: 36px;
    justify-content: space-between;
    align-items: center;
-
 }
-.contacts__item a{
-   color:#1E212C;
+.contacts__item a {
+   color: #1e212c;
 }
 
 .contacts__text {
@@ -161,14 +333,12 @@ body{
    font-size: 18px;
    line-height: 27px;
 }
-.item-phone{
+.item-phone {
    padding: 0 0 0 50px;
-   background: url(../assets/iPhone.svg)left  no-repeat;
-
-
+   background: url(../assets/iPhone.svg) left no-repeat;
 }
 
-.item-email{
+.item-email {
    padding: 0 0 0 50px;
-   background: url(../assets/Chat.svg)left  no-repeat;
+   background: url(../assets/Chat.svg) left no-repeat;
 }
