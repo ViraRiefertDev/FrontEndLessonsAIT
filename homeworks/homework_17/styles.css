@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*{
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+   margin: 0;
+   padding: 0;
+}
+
+.root {
+   font-family:"Roboto", serif;
+   max-width: 1180px;
+   margin: 0 auto;
+}
+.container {
+   
+}
+.main-container {
+
+   padding: 0 0 50px 0;
+}
+.title {
+   padding: 50px 0 0 0;
+   text-align: center;
+   color: #6e1f1f;
+   font-size: 50px;
+
+}
+.product-list {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   margin: -70px 0;
+   
+}
+.poduct-card {
+   display: flex;
+   gap: 100px;
+   border-bottom: 3px solid ;
+ 
+}
+.img-container{
+   width: 300px;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.product-img {
+   width: 200px;
+}
+.product-img img{
+   max-width: 100%;
+}
+.product-info {
+   width: 200px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 20px;
+
+
+}
+.product-name {
+   font-size: 16px;
+   text-align: center;
+}
+.product-price {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: red;
+   font-weight: 700;
+   font-size: 20px;
+   box-shadow: 0 0 10px red;
+   
+   height: 40px;
+}
+
+.filter-button {
+   width: 250px;
+   height: 50px;
+   position: sticky;
+   top: 380px;
+   left: -80px;
+   font-size: 20px;
+    font-weight: 700; 
+   align-self: start;
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #b33939;
+   color: white;
+   border: none; 
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   box-shadow: 0 10px 20px #b33939;
+}
+
+.filter-button:hover {
+   background-color: #8e2b2b;
+   transform: translateY(-2px);
+}
+
+.filter-button:active {
+   background-color: #6e1f1f;
+   transform: translateY(1px);
+}
+
+.footer{
+   height: 150px;
+}
+
+.hide-card{
+   display: none;
+}
