@@ -104,7 +104,7 @@ const getCatFact = async () => {
          method: "GET",
       });
       //метод GET по умолчанию, значит второй аргумент можно не указывать
-      /* console.log(response); */
+      console.log(response);
 
       const catFactData = await response.json();
       /* console.log(catFactData); */

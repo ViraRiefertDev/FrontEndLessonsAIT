@@ -72,3 +72,7 @@ button:disabled {
    cursor: pointer;
 }
 
+
+.data-container__punchline{
+   margin-top: 30px;
+}

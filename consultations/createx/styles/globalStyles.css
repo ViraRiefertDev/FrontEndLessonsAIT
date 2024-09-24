@@ -528,14 +528,13 @@ body {
    font-size: 18px;
    line-height: 27px;
 }
-.item-phone {
+
 .item-phone {
    padding: 0 0 0 50px;
    background: url(../assets/iPhone.svg) left no-repeat;
    background: url(../assets/iPhone.svg) left no-repeat;
 }
 
-.item-email {
 .item-email {
    padding: 0 0 0 50px;
    background: url(../assets/Chat.svg) left no-repeat;

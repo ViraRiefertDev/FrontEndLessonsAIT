@@ -30,14 +30,13 @@ li {
    gap: 40px;
    width: 100%;
    height: 100%;
-   background: rgb(116, 29, 80);
+   background: rgb(131, 206, 200);
    padding: 70px 40px 40px;
    color: white;
    font-family: "Courier New", Courier, monospace;
    font-size: 32px;
    font-weight: bold;
 }
-
 .data-container {
    max-width: 600px;
 }
@@ -53,8 +52,8 @@ li {
 button {
    width: 300px;
    padding: 20px;
-   background-color: #fff;
-   color: rgb(116, 29, 80);
+   background-color: #091431;
+   color: rgb(203, 212, 212);
    font-size: 24px;
    font-weight: bold;
    border: none;
@@ -63,7 +62,7 @@ button {
 }
 
 button:hover {
-   background-color: #b485a8;
+   background-color: #0b191d;
 }
 
 button:disabled {
@@ -71,4 +70,3 @@ button:disabled {
    color: rgb(166, 163, 163);
    cursor: pointer;
 }
-
